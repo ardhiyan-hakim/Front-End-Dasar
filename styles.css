@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
 
 :root {
-  --primary: #fffffe;
+  --primary: #090467;
   --secondary: #3da9fc;
-  --text: #090467;
+  --tertiary: #fffffe;
   --hover: #90b4ce;
 }
 
@@ -11,6 +11,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -69,56 +73,19 @@ body {
   width: 100%;
   height: 70%;
   text-decoration: none;
-  color: var(--secondary);
+  color: var(--tertiary);
   gap: 5px;
   transition: 0.3s ease;
 }
 
 .logo-container .logo:hover {
   padding: 0 20px;
-  background-color: var(--secondary);
+  background-color: var(--tertiary);
   color: var(--primary);
 }
 
 .logo span {
   font-size: 20px;
-}
-
-.navigation-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.navigation-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-}
-
-.navigation-item a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  padding: 0 70px;
-  text-decoration: none;
-  color: var(--secondary);
-  transition: 0.3s ease;
-}
-
-.navigation-item a.active {
-  background-color: var(--secondary);
-  color: var(--primary);
-}
-
-.navigation-item a:hover {
-  background-color: var(--secondary);
-  color: var(--primary);
 }
 
 .sign_in-button {
@@ -127,13 +94,13 @@ body {
   width: 100%;
   height: 70%;
   border: none;
-  color: var(--secondary);
+  color: var(--tertiary);
   cursor: pointer;
   transition: 0.3s ease;
 }
 
 .sign_in-button:hover {
-  background-color: var(--secondary);
+  background-color: var(--tertiary);
   color: var(--primary);
   padding: 0 20px;
 }
@@ -148,31 +115,130 @@ body {
 
 /* MAIN */
 .main-container {
-  position: relative;
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: 100%;
-  background-color: greenyellow;
-  padding: 50px 50px;
+  background-color: var(--tertiary);
+  padding: 0px 50px 70px;
 }
 
-.main-container * {
-  width: 100%;
-  height: 100vh;
-  background-color: red;
-  border: 8px solid black;
+.main-container .main-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  height: auto;
 }
+
+.main-container .jumbotron {
+  width: 100%;
+  height: 200px;
+  border: none;
+  outline: none;
+  border-radius: 0 0 12px 12px;
+  background-color: var(--primary);
+}
+
+.jumbotron .jumbotron-text {
+  position: relative;
+  top: 30%;
+  padding: 0 50px;
+  transform: translateY(-50%);
+  color: var(--tertiary);
+}
+
+.jumbotron-text a {
+  text-decoration: none;
+  color: var(--tertiary);
+}
+
+.jumbotron-text a:hover {
+  text-decoration: underline;
+}
+
+.main-container .content-container {
+  width: 90%;
+  height: auto;
+  border: 1px solid var(--primary);
+  border-radius: 12px;
+  transform: translateY(-60px);
+  background-color: var(--tertiary);
+}
+
+
+.main-container .content-container {
+  padding: 30px;
+}
+
+.content-container .content-card {
+  height: auto;
+  color: var(--primary);
+}
+
+.content-card h2 {
+  margin-bottom: 10px;
+}
+
+.content-card p + h2 {
+  margin-top: 60px;
+}
+
+.aside-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  background-color: var(--tertiary);
+  transform: translateY(-40px);
+}
+
+.aside-container .aside-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 90%;
+  height: auto;
+  height: 50vh;
+  border: 1px solid var(--primary);
+  border-radius: 12px;
+}
+
+.aside-wrapper .aside-photo,
+.aside-wrapper .aside-biodata {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+
+.aside-wrapper .aside-photo {
+  border-right: 1px dashed var(--primary);
+  border-radius: 12px 0 0 12px;
+}
+.aside-wrapper .aside-biodata {
+  border-left: 1px dashed var(--primary);
+  border-radius: 0 12px 12px 0;
+}
+
 
 /* FOOTER */
 .footer-container {
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: auto;
+  border-top: 2px solid var(--tertiary);
   background-color: var(--primary);
-  color: var(--secondary);
+  color: var(--tertiary);
   padding: 15px 0;
-  position: fixed;
   left: 0;
   bottom: 0;
 }
