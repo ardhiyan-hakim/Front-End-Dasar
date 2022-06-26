@@ -172,7 +172,6 @@ body {
   background-color: var(--tertiary);
 }
 
-
 .main-container .content-container {
   padding: 30px;
 }
@@ -221,28 +220,28 @@ body {
   height: 100%;
 }
 
-/* .aside-wrapper .aside-photo {
-  border-radius: 12px 0 0 12px;
-}
-.aside-wrapper .aside-biodata {
-  border-radius: 0 12px 12px 0;
-} */
-
 .aside-photo .aside-photo_image {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 65%;
+  height: 70%;
   border-radius: 10px 0 0;
   background-color: var(--tertiary);
 }
 
 .aside-photo_image .image-mock {
-  width: 55%;
-  height:75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 90%;
+}
+
+.image-mock img {
+  width: auto;
+  height: 100%;
   border-radius: 100%;
-  background-color: greenyellow;
 }
 
 .aside-photo .aside-photo_text {
@@ -251,9 +250,8 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 35%;
+  height: 30%;
   border-radius: 0 0 0 10px;
-  background-color: greenyellow;
   gap: 5px;
 }
 
@@ -269,11 +267,10 @@ body {
 .aside-biodata .aside-biodata_icons {
   display: grid;
   grid-template-columns: auto auto;
-  width: 100%;
-  height: 60%;
-  gap: 20px;
-  border-radius: 0 10px 0 0;
-  background-color: #3da9fc;
+  align-items: center;
+  width: 70%;
+  height: 65%;
+  background-color: var(--tertiary);
   padding: 20px;
 }
 
@@ -281,7 +278,76 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--tertiary);
+  width: 75px;
+  height: 75px;
+  margin: 0 auto;
+  border: 1px solid var(--primary);
+  border-radius: 12px;
+  transition: 0.4s;
+}
+
+.aside-biodata_icon:hover {
+  transform: scale(120%);
+}
+
+.aside-biodata_icon:active {
+  transform: scale(100%);
+}
+
+.aside-biodata_icon a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+  height: inherit;
+  text-decoration: none;
+}
+
+.aside-biodata_icon .fa-facebook-f,
+.aside-biodata_icon .fa-instagram,
+.aside-biodata_icon .fa-github,
+.aside-biodata_icon .fa-whatsapp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 80%;
+  border-radius: 100%;
+  font-size: 2rem;
+}
+
+.aside-biodata_icon .fa-facebook-f {
+  background-color: #3b5998;
+}
+
+.aside-biodata_icon .fa-instagram {
+  border-radius: 40px;
+  color: #fff;
+  background: #d6249f;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+
+.aside-biodata_icon .fa-github {
+  background-color: #171515;
+}
+
+.aside-biodata_icon .fa-whatsapp {
+  background-color: #25d366;
+}
+
+
+.fa-facebook-f:before,
+.fa-instagram:before,
+.fa-github:before,
+.fa-whatsapp:before {
+  color: var(--tertiary);
 }
 
 .aside-biodata .aside-biodata_projects {
@@ -290,10 +356,46 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 40%;
-  gap: 20px;
+  height: 35%;
+  gap: 10px;
+  padding: 0 20px 40px;
   border-radius: 0 0 10px 0;
-  background-color: whitesmoke;
+  background-color: var(--tertiary);
+  color: var(--primary);
+}
+
+.aside-biodata_project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 5px 0;
+  border: 3px solid var(--primary);
+  border-radius: 12px;
+  user-select: none;
+}
+
+.aside-biodata_project .project-text {
+  font-weight: bold;
+}
+
+.aside-biodata_project .project-description {
+  visibility: none;
+  height: 0;
+  opacity: 0;
+}
+
+.aside-biodata_project:hover .project-description {
+  visibility: visible;
+  height: auto;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.3s linear, height 5s ease;
+}
+
+.project-description a {
+  text-decoration: none;
 }
 
 /* FOOTER */
