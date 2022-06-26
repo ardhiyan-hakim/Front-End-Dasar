@@ -272,6 +272,7 @@ body {
   height: 65%;
   background-color: var(--tertiary);
   padding: 20px;
+  margin-bottom: 30px;
 }
 
 .aside-biodata_icons .aside-biodata_icon {
@@ -281,7 +282,6 @@ body {
   width: 75px;
   height: 75px;
   margin: 0 auto;
-  border: 1px solid var(--primary);
   border-radius: 12px;
   transition: 0.4s;
 }
@@ -335,7 +335,7 @@ body {
 }
 
 .aside-biodata_icon .fa-github {
-  background-color: #171515;
+  border: 16px solid #171515;
 }
 
 .aside-biodata_icon .fa-whatsapp {
@@ -345,10 +345,13 @@ body {
 
 .fa-facebook-f:before,
 .fa-instagram:before,
-.fa-github:before,
 .fa-whatsapp:before {
   color: var(--tertiary);
 }
+.fa-github:before {
+  color: #171515;
+}
+
 
 .aside-biodata .aside-biodata_projects {
   display: flex;
