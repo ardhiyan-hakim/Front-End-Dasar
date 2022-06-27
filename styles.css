@@ -207,6 +207,7 @@ body {
   width: 90%;
   height: auto;
   height: 50vh;
+  padding: 20px 0;
   border: 1px solid var(--primary);
   border-radius: 12px;
 }
@@ -235,7 +236,11 @@ body {
   justify-content: center;
   align-items: center;
   width: 60%;
-  height: 90%;
+  height: 100%;
+  background: var(--tertiary) url('/assets/profile_picture.jpg');
+  background-size: cover;
+  background-position-y: -55px;
+  border-radius: 8px;
 }
 
 .image-mock img {
@@ -283,7 +288,7 @@ body {
   height: 75px;
   margin: 0 auto;
   border-radius: 12px;
-  transition: 0.4s;
+  transition: 0.3s;
 }
 
 .aside-biodata_icon:hover {
@@ -303,7 +308,7 @@ body {
   text-decoration: none;
 }
 
-.aside-biodata_icon .fa-facebook-f,
+.aside-biodata_icon .fa-linkedin-in,
 .aside-biodata_icon .fa-instagram,
 .aside-biodata_icon .fa-github,
 .aside-biodata_icon .fa-whatsapp {
@@ -316,7 +321,7 @@ body {
   font-size: 2rem;
 }
 
-.aside-biodata_icon .fa-facebook-f {
+.aside-biodata_icon .fa-linkedin-in {
   background-color: #3b5998;
 }
 
@@ -343,7 +348,7 @@ body {
 }
 
 
-.fa-facebook-f:before,
+.fa-linkedin-in:before,
 .fa-instagram:before,
 .fa-whatsapp:before {
   color: var(--tertiary);
@@ -373,11 +378,12 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: auto;
+  height: 50px;
   padding: 5px 0;
   border: 3px solid var(--primary);
   border-radius: 12px;
   user-select: none;
+  transition: height 0.3s ease;
 }
 
 .aside-biodata_project .project-text {
@@ -390,11 +396,15 @@ body {
   opacity: 0;
 }
 
+.aside-biodata_project:hover {
+  height: 70px;
+}
+
 .aside-biodata_project:hover .project-description {
   visibility: visible;
   height: auto;
   opacity: 1;
-  transition: visibility 0s, opacity 0.3s linear, height 5s ease;
+  transition: opacity 0.3s ease;
 }
 
 .project-description a {
