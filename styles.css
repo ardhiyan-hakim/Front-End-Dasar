@@ -189,6 +189,10 @@ body {
   margin-top: 60px;
 }
 
+.content-card p + p {
+  margin-top: 20px;
+}
+
 .aside-container {
   display: flex;
   justify-content: center;
@@ -427,19 +431,20 @@ body {
   height: 100%;
   border: 1px solid var(--primary);
   background-color: var(--primary);
+  color: var(--tertiary);
+  padding: 10px 20px;
   transition: 0.3s ease;
   cursor: pointer;
 }
 
 .navigation-container .navigation-item.active,
 .navigation-container .navigation-item:hover {
-  background-color: white;
+  background-color: var(--tertiary);
+  color: var(--primary);
 }
 
 .navigation-item a {
   display: block;
-  color: var(--tertiary);
-  padding: 10px 20px;
   text-decoration: none;
 }
 
