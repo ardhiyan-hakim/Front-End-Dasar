@@ -19,6 +19,11 @@ consistencyBtn.addEventListener("click", () => {
   scrollTo(0, 830);
 });
 
+const menuBtn = document.querySelector('.menu-button');
+menuBtn.addEventListener('click', () => {
+  menuBtn.classList.toggle('show');
+})
+
 function renderElement() {
   const dataElement = data;
   const contentCard = document.querySelector('.content-card');
