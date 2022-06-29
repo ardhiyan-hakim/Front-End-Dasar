@@ -3,5 +3,13 @@
     width: 70%;
   }
 
-  
+  .modals-content .sign_in-method {
+    width: 90%;
+    height: 8vh;
+  }
+
+  .modals-header .modals-header_exit i {
+    right: 10px;
+  }
+
 }

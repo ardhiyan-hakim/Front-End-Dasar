@@ -35,12 +35,14 @@ signInBtn.addEventListener("click", () => {
   main.classList.add('blur');
 });
 
-const exitModals = document.querySelector('.modals-header_exit');
-exitModals.addEventListener('click', () => {
+const exitModalsBtn = document.querySelector('.modals-header_exit i');
+exitModalsBtn.addEventListener('click', () => {
   modals.classList.remove('show');
   header.classList.remove('blur');
   main.classList.remove('blur');
 })
+
+
 
 function renderElement() {
   const dataElement = data;

@@ -7,11 +7,11 @@
     width: 90%;
   }
 
-  .jumbotron .jumbotron-text h1{
+  .jumbotron .jumbotron-text h1 {
     font-size: 1rem;
   }
 
-  .jumbotron .jumbotron-text p{
+  .jumbotron .jumbotron-text p {
     margin-top: 5px;
     font-size: 0.7rem;
   }
@@ -41,5 +41,30 @@
   .project-text p,
   .project-description a {
     font-size: 0.75rem;
+  }
+
+  .modals-content .sign_in-method {
+    width: 70%;
+    height: 12vh;
+  }
+
+  .modals-header .modals-header_text {
+    width: 100%;
+  }
+
+  .modals-header_text p,
+  .modals-method_change { 
+    font-size: 13px;
+  }
+
+  .modals-wrapper .modals-header {
+    padding: 0;
+  }
+
+  .modals-header .modals-header_exit i {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 20%;
   }
 }

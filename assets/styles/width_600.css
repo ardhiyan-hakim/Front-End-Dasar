@@ -44,4 +44,15 @@
   .project-description a {
     font-size: 0.85rem;
   }
+
+  .modals-wrapper .modals-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .modals-content .sign_in-method {
+    width: 70%;
+    height: 12vh;
+  }
+
 }

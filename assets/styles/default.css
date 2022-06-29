@@ -516,6 +516,7 @@ main.blur,
 header.blur {
   filter: blur(8px);
   pointer-events: none;
+  user-select: none;
 }
 
 .modals {
@@ -562,7 +563,9 @@ header.blur {
   background-color: var(--tertiary);
 }
 
-.modals-header .modals-header_text,
+.modals-header .modals-header_text {
+  width: 50%;
+}
 .modals-header .modals-header_exit {
   width: 50%;
 }
@@ -571,12 +574,12 @@ header.blur {
   display: flex;
   justify-content: flex-end;
   color: var(--primary);
-  cursor: pointer;
 }
 
 .modals-header_exit i {
   font-size: 2rem;
   height: 50%;
+  cursor: pointer;
 }
 
 .modals-wrapper .modals-content {

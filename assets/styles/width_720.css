@@ -1,7 +1,7 @@
 @media screen and (max-width: 720px) {
   .logo-container .logo:hover,
   .sign_in-button:hover {
-      padding: 0 10px;
+    padding: 0 10px;
   }
 
   .jumbotron .jumbotron-text h1 {
@@ -44,5 +44,9 @@
   .project-description a {
     font-size: 0.95rem;
   }
-}
 
+  .modals-content .sign_in-method {
+    width: 25%;
+    height: 12.5vh;
+  }
+}

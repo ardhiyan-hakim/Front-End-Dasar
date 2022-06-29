@@ -51,5 +51,9 @@
   .project-description a {
     font-size: 1rem;
   }
+
+  .modals-content .sign_in-method {
+    width: 25%;
+  }
 }
 
