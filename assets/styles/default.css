@@ -536,7 +536,7 @@ header.blur {
   display: flex;
   visibility: visible;
   opacity: 1;
-  top: 50%;
+  top: 45%;
   transform: translateY(-50%);
 }
 
