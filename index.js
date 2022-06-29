@@ -21,8 +21,6 @@ consistencyBtn.addEventListener("click", () => {
 
 function renderElement() {
   const dataElement = data;
-  console.log(dataElement);
-
   const contentCard = document.querySelector('.content-card');
 
   dataElement.forEach((data) => {

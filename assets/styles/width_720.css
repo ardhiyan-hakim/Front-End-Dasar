@@ -1,0 +1,48 @@
+@media screen and (max-width: 720px) {
+  .logo-container .logo:hover,
+  .sign_in-button:hover {
+      padding: 0 10px;
+  }
+
+  .jumbotron .jumbotron-text h1 {
+    font-size: 1.2rem;
+  }
+
+  .jumbotron .jumbotron-text p {
+    font-size: 0.8rem;
+  }
+
+  .aside-biodata .aside-biodata_icons {
+    width: 80%;
+  }
+
+  .aside-biodata .aside-biodata_projects {
+    width: 80%;
+  }
+
+  .aside-photo_text h3 {
+    font-size: 1.2rem;
+  }
+
+  .aside-photo_text p {
+    font-size: 1rem;
+  }
+
+  .aside-biodata_icons .aside-biodata_icon {
+    transform: scale(85%);
+  }
+
+  .aside-biodata_project {
+    border: 2px solid var(--primary);
+  }
+
+  .aside-biodata_projects h3 {
+    font-size: 1.15rem;
+  }
+
+  .project-text p,
+  .project-description a {
+    font-size: 0.95rem;
+  }
+}
+

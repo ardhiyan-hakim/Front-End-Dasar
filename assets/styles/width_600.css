@@ -1,0 +1,47 @@
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 80%;
+  }
+
+  .logo-container {
+    padding: 0;
+  }
+
+  .jumbotron .jumbotron-text {
+    top: 30%;
+  }
+
+  .jumbotron .jumbotron-text p {
+    font-size: 0.8rem;
+  }
+
+  .main-container .main-wrapper {
+    width: 85%;
+  }
+
+  .main-container .content-container {
+    padding: 10px 20px 20px;
+    transform: translateY(-80px);
+  }
+
+  .content-card p + h2 {
+    margin-top: 35px;
+  }
+
+  .aside-photo_text h3 {
+    font-size: 1.15rem;
+  }
+
+  .aside-photo_text p {
+    font-size: 0.9rem;
+  }
+
+  .aside-biodata_projects h3 {
+    font-size: 1rem;
+  }
+
+  .project-text p,
+  .project-description a {
+    font-size: 0.85rem;
+  }
+}

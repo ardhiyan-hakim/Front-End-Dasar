@@ -1,0 +1,28 @@
+@media screen and (max-width: 960px) {
+  body {
+    font-size: 85%;
+  }
+
+  .navigation-container {
+    display: none;
+  }
+
+  .aside-photo_image .image-mock {
+    width: 240px;
+    height: 240px;
+    background-position: 0 -30px;
+  }
+
+  .logo-container,
+  .menu-container {
+    font-size: 1rem;
+  }
+
+  .sign_in-button {
+    background-color: var(--tertiary);
+    color: var(--primary);
+    padding: 0 20px;
+  }
+  
+}
+
