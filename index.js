@@ -24,25 +24,40 @@ menuBtn.addEventListener("click", () => {
   menuBtn.classList.toggle("show");
 });
 
-const modals = document.querySelector('.modals');
-const header = document.querySelector('header');
-const main = document.querySelector('main');
+const modals = document.querySelector(".modals");
+const header = document.querySelector("header");
+const main = document.querySelector("main");
 
 const signInBtn = document.querySelector(".sign_in-button");
 signInBtn.addEventListener("click", () => {
-  modals.classList.add('show');
-  header.classList.add('blur');
-  main.classList.add('blur');
+  modals.classList.add("show");
+  header.classList.add("blur");
+  main.classList.add("blur");
 });
 
-const exitModalsBtn = document.querySelector('.modals-header_exit i');
-exitModalsBtn.addEventListener('click', () => {
-  modals.classList.remove('show');
-  header.classList.remove('blur');
-  main.classList.remove('blur');
-})
+const exitModalsBtn = document.querySelector(".modals-header_exit i");
+exitModalsBtn.addEventListener("click", () => {
+  modals.classList.remove("show");
+  header.classList.remove("blur");
+  main.classList.remove("blur");
+});
 
+const navList = document.querySelectorAll(".navigation-item");
 
+navList.forEach((nav, index) => {
+  nav.addEventListener("click", () => {
+    iterateNav(navList);
+    navList[index].classList.add("active");
+  });
+});
+
+function iterateNav(list) {
+  list.forEach((item) => {
+    if (item.classList.contains("active")) {
+      item.classList.remove("active");
+    }
+  });
+}
 
 function renderElement() {
   const dataElement = data;
