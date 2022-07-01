@@ -67,4 +67,8 @@
     right: 0;
     width: 20%;
   }
+
+  .menu_screen-container {
+    width: 100%;
+  }
 }

@@ -49,4 +49,8 @@
     width: 25%;
     height: 12.5vh;
   }
+
+  .menu_screen-container {
+    width: 40%;
+  }
 }

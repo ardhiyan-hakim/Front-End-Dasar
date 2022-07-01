@@ -21,7 +21,10 @@ consistencyBtn.addEventListener("click", () => {
 
 const menuBtn = document.querySelector(".menu-button");
 menuBtn.addEventListener("click", () => {
-  menuBtn.classList.toggle("show");
+  console.log('Sedang menekan menu button');
+  const menuCtn = document.querySelector(".menu_screen-container");
+  menuBtn.classList.toggle('show')
+  menuCtn.classList.toggle('show')
 });
 
 const modals = document.querySelector(".modals");

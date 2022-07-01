@@ -55,4 +55,7 @@
     height: 12vh;
   }
 
+  .menu_screen-container {
+    width: 50%;
+  }
 }
