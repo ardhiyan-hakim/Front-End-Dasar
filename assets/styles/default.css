@@ -84,6 +84,8 @@ body {
   align-items: center;
   width: 100%;
   height: 70%;
+  border: none;
+  border-radius: 8px;
   text-decoration: none;
   color: var(--tertiary);
   gap: 5px;
