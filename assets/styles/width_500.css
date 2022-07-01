@@ -20,6 +20,11 @@
     margin-top: 20px;
   }
 
+
+  .aside-photo_image .image-mock {
+    width: 160px;
+    height: 160px;
+  }
   .aside-photo_text h3 {
     font-size: 0.9rem;
   }

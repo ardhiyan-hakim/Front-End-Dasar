@@ -514,10 +514,12 @@ footer {
 }
 
 main.blur,
-header.blur {
+header.blur,
+.menu_screen-container.blur {
   filter: blur(8px);
   pointer-events: none;
   user-select: none;
+  transition: 0s ease;
 }
 
 .modals {
@@ -725,7 +727,7 @@ header.blur {
   opacity: 0;
   right: -100%;
   bottom: 0;
-  background-color: red;
+  background-color: var(--primary);
   height: calc(100vh - 70px);
-  transition: 0.3s ease, transform 0.45s ease;
+  transition: 0.3s ease;
 }
