@@ -234,15 +234,15 @@ body {
   color: var(--primary);
 }
 
-.content-card h2 {
+article h2 {
   margin-bottom: 10px;
 }
 
-.content-card p + h2 {
+article + article {
   margin-top: 60px;
 }
 
-.content-card p + p {
+article p + p {
   margin-top: 20px;
 }
 

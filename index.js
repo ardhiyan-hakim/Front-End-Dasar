@@ -121,17 +121,21 @@ function checkHeightElement() {
 function renderElement() {
   const dataElement = data;
   const contentCard = document.querySelector(".content-card");
-
+  
   dataElement.forEach((data) => {
+    const article = document.createElement('article');
     const h2 = document.createElement("h2");
     h2.setAttribute("id", data.id);
     h2.innerText = data.headingContent;
-    contentCard.append(h2);
-
+    article.append(h2);
+    
     data.textContent.paragraph.forEach((paragraph) => {
       const p = document.createElement("p");
       p.innerText = paragraph;
-      contentCard.append(p);
+      article.append(p);
     });
+    
+    contentCard.append(article);
   });
+
 }

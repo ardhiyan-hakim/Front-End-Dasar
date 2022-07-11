@@ -16,7 +16,7 @@
     font-size: 0.7rem;
   }
 
-  .content-card p + h2 {
+  article + article {
     margin-top: 20px;
   }
 

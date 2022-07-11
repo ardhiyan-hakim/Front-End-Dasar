@@ -7,6 +7,10 @@
     display: none;
   }
 
+  article + article {
+    margin-top: 40px;
+  }
+
   .aside-photo_image .image-mock {
     width: 240px;
     height: 240px;
