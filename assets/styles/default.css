@@ -45,12 +45,15 @@ body {
 
 /* HEADER */
 .header-container {
+  position: fixed;
   display: flex;
   align-items: center;
   width: 100%;
   height: 70px;
+  top: 0;
   background-color: var(--primary);
   padding: 0 30px;
+  z-index: 1;
 }
 
 .header-wrapper {
@@ -177,7 +180,7 @@ body {
   height: 100%;
   margin: 30px auto 0;
   background-color: var(--tertiary);
-  padding: 0px 50px 70px;
+  padding: 70px 50px 70px;
 }
 
 .main-container .main-wrapper {
@@ -290,8 +293,7 @@ article p + p {
 .aside-photo_image .image-mock {
   width: 280px;
   height: 280px;
-  background: var(--tertiary) url("/assets/profile_picture.jpg") no-repeat;
-  background-size: cover;
+  object-fit: cover;
   background-position: 0 -30px;
   border-radius: 100%;
 }
@@ -463,7 +465,7 @@ article p + p {
   justify-content: center;
   align-items: center;
   width: 25%;
-  top: 50px;
+  top: 120px;
   margin-left: 30px;
 }
 
