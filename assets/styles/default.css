@@ -517,9 +517,10 @@ footer {
   bottom: 0;
 }
 
-main.blur,
+.main-wrapper.blur,
 header.blur,
-.menu_screen-container.blur {
+.menu_screen-container.blur,
+.navigation-container.blur {
   filter: blur(8px);
   pointer-events: none;
   user-select: none;
